@@ -1,7 +1,7 @@
 package dev.entao.orm
 
-import dev.entao.base.nameClass
-import dev.entao.base.nameProp
+import dev.entao.kan.base.nameClass
+import dev.entao.kan.base.nameProp
 import kotlin.reflect.KClass
 import kotlin.reflect.KProperty
 import kotlin.reflect.full.findAnnotation

@@ -3,10 +3,10 @@
 package dev.entao.orm
 
 import android.support.annotation.Keep
-import dev.entao.appbase.sql.EQ
-import dev.entao.appbase.sql.RowData
-import dev.entao.appbase.sql.SQLQuery
-import dev.entao.appbase.sql.Where
+import dev.entao.kan.appbase.sql.EQ
+import dev.entao.kan.appbase.sql.RowData
+import dev.entao.kan.appbase.sql.SQLQuery
+import dev.entao.kan.appbase.sql.Where
 import kotlin.reflect.KClass
 import kotlin.reflect.KProperty
 

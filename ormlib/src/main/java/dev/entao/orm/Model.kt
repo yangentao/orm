@@ -4,11 +4,12 @@ package dev.entao.orm
 
 import android.content.ContentValues
 import android.support.annotation.Keep
-import dev.entao.appbase.sql.Where
-import dev.entao.base.getValue
-import dev.entao.base.nameProp
-import dev.entao.json.Yson
-import dev.entao.json.YsonObject
+import dev.entao.kan.appbase.sql.Where
+import dev.entao.kan.appbase.sql.mapToContentValues
+import dev.entao.kan.base.getValue
+import dev.entao.kan.base.nameProp
+import dev.entao.kan.json.Yson
+import dev.entao.kan.json.YsonObject
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.KProperty
 
@@ -134,7 +135,7 @@ open class Model(val model: YsonObject) {
 	fun toContentValues(): ContentValues {
 		val ks = this::class.modelPropKeySet
 		val m2 = model.filterKeys { it in ks }
-		return dev.entao.appbase.sql.mapToContentValues(m2)
+		return  mapToContentValues(m2)
 	}
 
 

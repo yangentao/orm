@@ -1,6 +1,6 @@
 package dev.entao.utilapp
 
-import dev.entao.json.YsonObject
+import dev.entao.kan.json.YsonObject
 import dev.entao.orm.AutoInc
 import dev.entao.orm.Model
 import dev.entao.orm.ModelClass

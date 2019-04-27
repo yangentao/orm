@@ -1,8 +1,8 @@
 @file:Suppress("unused")
 
 package dev.entao.orm
-import dev.entao.base.isPublic
-import dev.entao.base.nameProp
+import dev.entao.kan.base.isPublic
+import dev.entao.kan.base.nameProp
 import kotlin.reflect.KClass
 import kotlin.reflect.KMutableProperty
 import kotlin.reflect.full.memberProperties

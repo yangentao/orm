@@ -2,8 +2,8 @@
 
 package dev.entao.orm
 
-import dev.entao.appbase.App
-import dev.entao.base.closeSafe
+import dev.entao.kan.appbase.App
+import dev.entao.kan.base.closeSafe
 import java.util.*
 
 

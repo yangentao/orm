@@ -1,7 +1,7 @@
 package dev.entao.utilapp
 
 import android.app.Application
-import dev.entao.appbase.App
+import dev.entao.kan.appbase.App
 
 class MyApp : Application() {
 

@@ -5,11 +5,11 @@ package dev.entao.orm
 import android.annotation.SuppressLint
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import dev.entao.appbase.sql.*
-import dev.entao.base.*
-import dev.entao.json.YsonNum
-import dev.entao.json.YsonObject
-import dev.entao.json.createYsonModel
+import dev.entao.kan.appbase.sql.*
+import dev.entao.kan.base.*
+import dev.entao.kan.json.YsonNum
+import dev.entao.kan.json.YsonObject
+import dev.entao.kan.json.createYsonModel
 import java.io.Closeable
 import kotlin.reflect.KClass
 import kotlin.reflect.KMutableProperty
@@ -194,7 +194,7 @@ class Conn(val db: SQLiteDatabase) : Closeable {
 
 	}
 
-	fun findRows(block: dev.entao.appbase.sql.SQLQuery.() -> Unit): List<RowData> {
+	fun findRows(block:  SQLQuery.() -> Unit): List<RowData> {
 		val q = SQLQuery()
 		q.block()
 		val c = this.query(q) ?: return emptyList()

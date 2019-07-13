@@ -3,7 +3,7 @@
 package dev.entao.orm
 
 import android.content.ContentValues
-import android.support.annotation.Keep
+import androidx.annotation.Keep
 import dev.entao.kan.appbase.sql.Where
 import dev.entao.kan.appbase.sql.mapToContentValues
 import dev.entao.kan.base.getValue

@@ -1,7 +1,7 @@
 package dev.entao.utilapp
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import dev.entao.kan.appbase.sql.GE
 
 class MainActivity : AppCompatActivity() {

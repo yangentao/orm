@@ -2,7 +2,7 @@
 
 package dev.entao.orm
 
-import android.support.annotation.Keep
+import androidx.annotation.Keep
 import dev.entao.kan.appbase.sql.EQ
 import dev.entao.kan.appbase.sql.RowData
 import dev.entao.kan.appbase.sql.SQLQuery
@@ -18,7 +18,7 @@ import kotlin.reflect.KProperty
 open class ModelClass<T : Model> {
 
 	@Suppress("UNCHECKED_CAST")
-	val modelClass: KClass<T> = javaClass.enclosingClass.kotlin as KClass<T>
+	val modelClass: KClass<T> = javaClass.enclosingClass!!.kotlin as KClass<T>
 
 
 	open fun delete(w: Where?): Int {

@@ -1,9 +1,6 @@
 package dev.entao.orm
 
-//字段长度--字符串
-@Target(AnnotationTarget.PROPERTY, AnnotationTarget.FIELD)
-@Retention(AnnotationRetention.RUNTIME)
-annotation class Length(val value: Int)
+
 
 //是否非空
 @Target(AnnotationTarget.PROPERTY, AnnotationTarget.FIELD)
@@ -32,9 +29,7 @@ annotation class PrimaryKey
 annotation class AutoInc
 
 
-@Target(AnnotationTarget.PROPERTY, AnnotationTarget.FIELD)
-@Retention(AnnotationRetention.RUNTIME)
-annotation class Exclude(val value: ExcludeFor = ExcludeFor.ALL)
+
 
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.RUNTIME)
@@ -45,9 +40,6 @@ annotation class AutoAlterTable(val value: Boolean = true)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class Uniques(vararg val value: String)
 
-enum class ExcludeFor {
-    ALL, SQL, JSON
-}
 
 
 //自动创建表

@@ -1,5 +1,6 @@
 package dev.entao.orm
 
+import dev.entao.kan.base.Exclude
 import dev.entao.kan.base.nameClass
 import dev.entao.kan.base.nameProp
 import kotlin.reflect.KClass

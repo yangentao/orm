@@ -198,7 +198,7 @@ class Conn(val db: SQLiteDatabase) : Closeable {
 		val q = SQLQuery()
 		q.block()
 		val c = this.query(q) ?: return emptyList()
-		return c.listRow_
+		return c.listRowData
 
 	}
 
@@ -206,7 +206,7 @@ class Conn(val db: SQLiteDatabase) : Closeable {
 		val q = SQLQuery()
 		q.block()
 		val c = this.query(q) ?: return emptyList()
-		return c.listObject_
+		return c.listYsonObject
 
 	}
 
